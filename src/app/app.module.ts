@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ElementsModule} from './elements/elements.module';
+import { CollectionsModule} from './collections/collections.module';
+import {ViewsModule} from './views/views.module';
+import { MoldsModule } from './molds/molds.module';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ElementsModule,
+    CollectionsModule,
+    ViewsModule,
+    MoldsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
